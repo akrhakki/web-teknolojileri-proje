@@ -1,1 +1,1 @@
-# werb-teknolojileri-proje
+# web-teknolojileri-proje
