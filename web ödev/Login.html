@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HAKKIMDA</title>
+    <title>Login</title>
     <link rel="stylesheet" href="style.css">
     <!-- CSS only -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
@@ -19,7 +19,6 @@
 </head>
 
 <body>
-    <!-- navbar  -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html"><i class="bi bi-house-fill" style="font-size: 2rem;"></i></a>
@@ -32,7 +31,7 @@
                         <a class="nav-link active" aria-current="page" href="özgeçmiş.html">Özgeçmiş</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" style="padding-left: 2rem" href="Şehrim.html">Şehrim</a>
+                        <a class="nav-link" style="padding-left: 2rem" href="özgeçmiş.html">Şehrim</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" style="padding-left: 2rem" href="mirasımız.html">Mirasımız</a>
@@ -49,79 +48,32 @@
             </div>
         </div>
     </nav>
-    <section class="p-5 border-orange">
-        <!-- HAKKIMDA -->
-        <div class="container text-center">
-            <h3>HAKKIMDA</h3>
-            <hr>
-            <p><span class="fs-5">
-                Merhaba ben Abdullah Hakkı Akar Sakarya Üniversitesi Bilgisayar Müh. İkinci Öğretim Öğrencisiyim 20 Yaşındayım
-                Basket Oynamaktan Hoşlanırım Futbolu Çok Sevdiğim Söylenemez Ama Tuttuğum Takım Sivasspor
-                Doğa Yürüyüşü Yapmayı Ve Fotoğraf çekmeyi Severim
-                Bu sayfada ben ve benim hakkımda bilgi vereceğim...
-    
-            </span>
-            </p>
-            <hr>
+    <section class="p-5">
+        <div class="container">
+            <form id="myForm" action="loginn.php" method="post">
+                <div class="mb-3 row justify-content-center">
+                    <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+                    <div class="col-sm-3">
+                        <input id="email" type="text" class="form-control" id="staticEmail" name="mail">
+                    </div>
+                </div>
+                <div class="mb-3 row justify-content-center">
+                    <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+                    <div class="col-sm-3">
+                        <input id="password" type="password" class="form-control" id="inputPassword" name="password">
+                    </div>
+                </div>
+                <div class="mb-3 row justify-content-center">
+                    <div class="col-sm-2">
+                        <button class="btn btn-primary w-100" type="button" onclick="reset()">RESET</button>
+                    </div>
+                    <div class="col-sm-2">
+                        <button type="submit" class="btn btn-primary w-100">GİRİŞ</button>
+                    </div>
+                </div>
+            </form>
         </div>
     </section>
-    <main>
-        <div class="container">
-            <div class="row">
-                <p>Merhaba ben abdullah hakkı akar gündelik hayatımda kısa oldugu için hakkı ismini kullanıyorum.benim hayatıma bilgisayarın girmesi 5 yaşında gerçekleşti.O günden itibaren sürekli oyun oynayan bir çocuk oldum.Aslında hayatıma bilgisayarın
-                    girmesi derslerimi olumsuz etkilesede oyun oynadıkça kendimi mutlu hissediyordum.6 yaşımda metin2 sayesinde okuma yazmayı öğrendim</p>
-                <p> <img class='' src="img/metin2.jpg"></p>
-                <br><br>
-                <p>
-                    İlerleyen yaşlarımda doğa fotoğrafları çekmeyi sevdiğimi farkettim tabiki doğa fotoğrafı çekmeyi seviyorsam doğa yürüyüşü yapmayıda seviyorum benim için sakaryayı yazmamın sebeplerinden birisiydi doğa.
-                </p>
-                <p> <img src="img/1652345701994.jpg" class="rounded float-start" width="400px" alt="...">
-                    <img src="img/1652345701998.jpg" class="rounded float-end" width="400px" alt="..."></p>
-                <p>ilgilendiğim sporlar arasında birinci sırada basketbol geliyor.Sivas Yolspor Kulübü olarak bölge 1.liğimiz var aşşağıdaki resimde mersin türkiye şampiyonasından bir fotoğraf</p>
-                <p> <img class='' src="img/yolspor.jpg" width="1277rem"></p>
-                <p>
-                    Sivasspor benim için memleket sevdasıdır acaba sivaslı olduğum içinmi sivassporu tutuyorum bilmiyorum ama futbolu çok sevmesemde sivasspor maçlarına gidip tezahürat etmeyi severim
-
-                </p>
-                <p> <img class='' src="img/sivasspor.jpg" width="1277rem"></p>
-
-
-
-            </div>
-        </div>
-    </main>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     <footer class="p-3  bg-dark text-white text-center position-relative">
         <div class="container">
@@ -135,10 +87,6 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-
 </body>
 
 </html>
-<!-- <div class="foto ">
-    <img src="esgal.jpg " class=" img-thumbnail " alt="... ">
-</div> -->
